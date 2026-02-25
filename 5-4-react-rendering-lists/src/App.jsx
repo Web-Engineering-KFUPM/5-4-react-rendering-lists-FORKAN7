@@ -144,7 +144,14 @@ export default function App() {
         - course={course}
         - index={idx}
         - onMutateCourse={mutateCourseByIndex}
-  */}
+  */
+  }
+  {courses.map((course) => (
+  // eslint-disable-next-line no-undef
+  <CourseCard key={course.id} course={course} index={idx}
+         onMutateCourse={mutateCourseByIndex} />
+))}
+
       </section>
     </main>
   );
