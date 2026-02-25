@@ -39,5 +39,4 @@ export default function DueBadge({ dueDate }) {
   }
 
 
-  return <span className="badge">Label here</span>;
-}
+return <span className="badge">{label}</span>;}
